@@ -753,20 +753,23 @@ h1 {
 
 .card-wrapper {
   display: flex;
-  align-items: center;
   flex-wrap: wrap;
+  gap: 15px 30px;
 }
 
 .card {
   background-color: #fff;
   padding: 20px;
-  margin-bottom: 15px;
-  flex-basis: 50%;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 48%;
 }
 
 .card-mediacontent img {
-  width: 443px;
-  height: auto;
+  width: 100%;
+  height: 262px;
+  object-fit: cover;
+  object-position: center;
   margin-bottom: 15px;
 }
 
@@ -774,18 +777,17 @@ h1 {
   text-align: center;
 }
 
-.card-content nav {}
-
 .breadcrumbs {
   margin-bottom: 15px;
 }
 
 .breadcrumbs-list {
   display: flex;
+  flex-wrap: wrap;
   font-family: "CoreSansA55Medium";
   font-style: normal;
   font-weight: 600;
-  font-size: 32px;
+  font-size: 30px;
   line-height: 31px;
   color: #37474F;
 }
@@ -795,7 +797,7 @@ h1 {
 }
 
 .breadcrumbs-list li:not(:last-child) {
-  margin-right: 8px;
+  margin-right: 10px;
 }
 
 .breadcrumbs-list li:first-child {
@@ -806,18 +808,20 @@ h1 {
   color: #E62828;
 }
 
-.breadcrumbs-list div {
-  margin-right: 10px;
-}
-
-.arrow-right svg {
+.breadcrumbs-list svg {
   width: 24px;
   height: 24px;
   color: #000000;
+  margin-right: 5px;
+}
+
+.card-content-about {
+  height: 350px;
+  margin-bottom: 20px;
 }
 
 .card-content p {
-  margin-bottom: 16px;
+  margin-bottom: 20px;
   text-align: left;
 }
 

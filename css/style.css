@@ -681,7 +681,7 @@ h1 {
 }
 
 .about-block .title-big .title h1 {
-  font-size: 44px;
+  font-size: 40px;
   text-align: left;
   letter-spacing: -1.5px;
   text-transform: lowercase;
@@ -741,7 +741,7 @@ h1 {
 }
 
 .about .free-transport {
-  margin-top: 72px;
+  margin-top: 42px;
   background: #f8f7f7;
   padding-bottom: 86px;
 }
@@ -754,15 +754,15 @@ h1 {
 .card-wrapper {
   display: flex;
   flex-wrap: wrap;
-  gap: 15px 30px;
+  justify-content: space-evenly;
+  gap: 15px 0px;
 }
 
 .card {
   background-color: #fff;
   padding: 20px;
-  -ms-flex: 0 0 50%;
   flex: 0 0 50%;
-  max-width: 48%;
+  max-width: 45%;
 }
 
 .card-mediacontent img {
@@ -787,7 +787,7 @@ h1 {
   font-family: "CoreSansA55Medium";
   font-style: normal;
   font-weight: 600;
-  font-size: 30px;
+  font-size: 28px;
   line-height: 31px;
   color: #37474F;
 }

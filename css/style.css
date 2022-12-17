@@ -515,7 +515,7 @@ h1 {
 }
 
 .free-transport .title-big {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .free-transport .block {
@@ -766,7 +766,11 @@ h1 {
   box-shadow: 0 0 8px 4px rgba(221, 221, 221, 1);
 }
 
-.card-mediacontent img {
+.card-mediacontent {
+
+}
+
+.card-mediacontent iframe {
   width: 100%;
   height: 262px;
   object-fit: cover;
@@ -820,7 +824,7 @@ h1 {
 }
 
 .card-content-about {
-  height: 290px;
+  height: 238px;
   margin-bottom: 20px;
 }
 
@@ -859,6 +863,42 @@ h1 {
   background-color: #37474f;
 
 }
+
+.transport-footer-text {
+  font-family: "CoreSansA45Regular";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: #37474F;
+  max-width: 738px;
+  margin: 0 auto;
+  padding-top: 35px;
+}
+
+/*-----------------------------------------------------------------------------*/
+
+.tns-nav {
+  text-align: center;
+}
+
+.tns-nav button {
+  width: 10px;
+  height: 10px;
+  padding: 0;
+  background-color: #a5a5a5;
+  border:none;
+  border-radius: 50%;
+}
+
+.tns-nav .tns-nav-active {
+  background-color: #000;
+}
+
+.tns-nav button:not(:last-child) {
+  margin-right: 5px;
+}
+
 
 /*-----------------------------------------------------------------------------*/
 .album .gallery {

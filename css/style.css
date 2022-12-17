@@ -753,16 +753,17 @@ h1 {
 
 .card-wrapper {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  gap: 15px 0px;
+  gap: 30px;
+  cursor: grab;
+  padding: 20px;
 }
 
 .card {
   background-color: #fff;
-  padding: 20px;
-  flex: 0 0 50%;
-  max-width: 45%;
+  padding: 15px;
+  max-width: 50%;
+  border-radius: 20px;
+  box-shadow: 0 0 8px 4px rgba(221, 221, 221, 1);
 }
 
 .card-mediacontent img {
@@ -787,12 +788,15 @@ h1 {
   font-family: "CoreSansA55Medium";
   font-style: normal;
   font-weight: 600;
-  font-size: 28px;
+  font-size: 24px;
   line-height: 31px;
+  max-width: 324px;
   color: #37474F;
 }
 
 .breadcrumbs-list li {
+  display: inline-flex;
+  align-items: center;
   max-width: 358px;
 }
 
@@ -809,26 +813,26 @@ h1 {
 }
 
 .breadcrumbs-list svg {
-  width: 24px;
-  height: 24px;
+  width: 20px;
+  height: 20px;
   color: #000000;
   margin-right: 5px;
 }
 
 .card-content-about {
-  height: 350px;
+  height: 290px;
   margin-bottom: 20px;
 }
 
 .card-content p {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   text-align: left;
 }
 
 .card-content-subtitle {
   font-family: "CoreSansA45Regular";
   font-weight: 400;
-  font-size: 22px;
+  font-size: 16px;
   line-height: 22px;
   color: #37474F;
 }
@@ -848,6 +852,12 @@ h1 {
   padding: 15px 30px;
   background-color: #CB4040;
   border-radius: 12px;
+  transition: background-color .3s ease-in-out;
+}
+
+.btn-request:hover {
+  background-color: #37474f;
+
 }
 
 /*-----------------------------------------------------------------------------*/

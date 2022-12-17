@@ -23,6 +23,13 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <!-- <script type="text/javascript" src="js/ajax/ajax.js"></script>
     <script src="https://www.google.com/recaptcha/api.js?hl=ru"></script> -->
+
+    <!-- SLider -->
+    <!-- // For CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css">
+
+    <!-- // For JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
 </head>
 
 <body>
@@ -86,7 +93,7 @@
                                 <h1>Еженедельные рейсы по странам</h1>
                             </div>
                         </div>
-                        <div class="card-wrapper">
+                        <div class="card-wrapper card-slider">
                             <div class="card">
                                 <div class="card-items">
                                     <div class="card-mediacontent">
@@ -408,6 +415,19 @@
                 behavior: 'smooth',
                 block: 'start'
             });
+        });
+    </script>
+    <script>
+        let slider = tns({
+            container: '.card-slider',
+            nav: false,
+            controls: false,
+            items: 2,
+            slideBy: 1,
+            // autoplay: true,
+            autoplayButtonOutput: false,
+            autoplayTimeout: 2000,
+            mouseDrag: true
         });
     </script>
     <svg style="display:block;width:0;height:0;" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">

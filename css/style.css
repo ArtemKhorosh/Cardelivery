@@ -766,9 +766,7 @@ h1 {
   box-shadow: 0 0 8px 4px rgba(221, 221, 221, 1);
 }
 
-.card-mediacontent {
-
-}
+.card-mediacontent {}
 
 .card-mediacontent iframe {
   width: 100%;
@@ -834,9 +832,9 @@ h1 {
 }
 
 .card-content-subtitle {
-  font-family: "CoreSansA45Regular";
+  font-family: "CoreSansA35Light";
   font-weight: 400;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 22px;
   color: #37474F;
 }
@@ -847,10 +845,10 @@ h1 {
 
 .btn-request {
   display: inline-flex;
-  font-family: "CoreSansA45Regular";
+  font-family: "CoreSansA35Light";
   font-weight: 400;
-  font-size: 19px;
-  line-height: 19px;
+  font-size: 15px;
+  line-height: 22px;
   color: #fff !important;
   text-decoration: none;
   padding: 15px 30px;
@@ -865,39 +863,78 @@ h1 {
 }
 
 .transport-footer-text {
-  font-family: "CoreSansA45Regular";
+  font-family: "CoreSansA35Light";
   font-weight: 400;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 22px;
   text-align: center;
-  color: #37474F;
+  color: #4d4d4d;
   max-width: 738px;
   margin: 0 auto;
   padding-top: 35px;
 }
 
+.transport-footer-text strong {
+  font-family: "CoreSansA65Bold", sans-serif;
+}
+
 /*-----------------------------------------------------------------------------*/
 
-.tns-nav {
+.control button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+  transition: background-color .3s ease-in-out;
+}
+
+.control button:hover {
+  background-color: #37474F;
+}
+
+.control .prev {
+  right: 100%;
+}
+
+.control .next {
+  left: 100%;
+}
+
+.control svg {
+  fill: #fff;
+  width: 20px;
+  height: 20px;
+}
+
+.slider-dots {
   text-align: center;
 }
 
-.tns-nav button {
+.slider-dots button {
   width: 10px;
   height: 10px;
   padding: 0;
   background-color: #a5a5a5;
-  border:none;
+  border: none;
   border-radius: 50%;
 }
 
-.tns-nav .tns-nav-active {
-  background-color: #000;
-}
-
-.tns-nav button:not(:last-child) {
+.slider-dots button:not(:last-child) {
   margin-right: 5px;
 }
+
+.slider-dots .tns-nav-active {
+  background-color: #37474F;
+}
+
+
 
 
 /*-----------------------------------------------------------------------------*/

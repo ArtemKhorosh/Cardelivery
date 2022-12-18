@@ -685,6 +685,7 @@ h1 {
 }
 
 .about-block .title-big .title h2 {
+  font-family: "CoreSansA55Medium";
   font-size: 32px;
   font-weight: 600;
   line-height: 43px;

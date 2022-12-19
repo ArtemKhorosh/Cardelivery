@@ -23,6 +23,12 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <!-- <script type="text/javascript" src="js/ajax/ajax.js"></script>
     <script src="https://www.google.com/recaptcha/api.js?hl=ru"></script> -->
+    <!-- SLider -->
+    <!-- // For CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css">
+
+    <!-- // For JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
 </head>
 
 <body>
@@ -53,7 +59,7 @@
                     <ul>
                         <li><a href="ru/home">Главная</a></li>
                         <li><a href="ru/about">О Нас</a></li>
-                        <li><a href="ru/directions" class="active">Направления</a></li>
+                        <li><a href="ru/directions" class="active">Регулярные рейсы</a></li>
                         <li><a href="ru/gallery">Фотогалерея</a></li>
                         <li><a href="ru/contact">Контакты</a></li>
                     </ul>
@@ -67,7 +73,7 @@
                     <div class="title-big">
                         <div class="quote">&nbsp;</div>
                         <div class="title">
-                            <h1>Направления</h1>
+                            <h1>Регулярные рейсы</h1>
                         </div>
                     </div>
                     <div class="text">
@@ -85,7 +91,7 @@
                                 <h2>Свободный транспорт</h2>
                             </div>
                         </div>
-                        <div class="card-block">
+                        <div class="card-block my-slider">
                             <div class="card-route">
                                 <div class="route-info">
                                     <iframe class="route-map-img" src="https://www.google.com/maps/embed?pb=!1m34!1m12!1m3!1d2233216.5229166546!2d22.204170280623106!3d56.86523004253355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m19!3e0!4m5!1s0x46dd94140f33be13%3A0xf30a54d3a55dbab9!2z0JvQuNGC0LLQsA!3m2!1d55.169438!2d23.881275!4m5!1s0x46e930677b8a9afd%3A0xcfcd68f2fc10!2z0JvQsNGC0LLQuNGP!3m2!1d56.879635!2d24.603189!4m5!1s0x4692949c82a04bfd%3A0x40ea9fba4fb425c3!2z0K3RgdGC0L7QvdC40Y8!3m2!1d58.595271999999994!2d25.013607099999998!5e0!3m2!1sru!2sua!4v1671264400659!5m2!1sru!2sua" style="border:0; border-radius:6px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -416,6 +422,16 @@
                 behavior: 'smooth',
                 block: 'start'
             });
+        });
+    </script>
+    <script>
+        let slider = tns({
+            container: '.my-slider',
+            items: 2,
+            slideBy: 1,
+            autoplay: false,
+            axis: 'vertical',
+            mouseDrag: true
         });
     </script>
     <svg style="display:block;width:0;height:0;" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">

@@ -762,7 +762,7 @@ h1 {
   position: relative;
 }
 
-.free-transport-img {
+.free-transport-img img{
   position: absolute;
   top: 19px;
   width: 100%;

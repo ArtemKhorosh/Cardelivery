@@ -519,6 +519,7 @@ h1 {
 }
 
 .free-transport .title-big {
+  margin: 0 auto;
   margin-bottom: 20px;
 }
 
@@ -685,14 +686,11 @@ h1 {
 }
 
 .about-block .title-big .title h2 {
-  font-family: "CoreSansA55Medium";
+  font-family: "CoreSansA65Bold";
   color: #37474f;
-  letter-spacing: -1.5px;
   font-size: 29px;
-  line-height: 43px;
-  text-align: left;
-  border-left: 15px solid #E62828;
-  padding-left: 20px;
+  line-height: normal;
+  text-align: center;
 }
 
 .about-block .title-big .title h1:first-letter {
@@ -727,6 +725,7 @@ h1 {
   padding-top: 21px;
   text-align: left;
   display: block;
+  margin-bottom: 20px;
 }
 
 .about-block a {
@@ -766,7 +765,7 @@ h1 {
   position: absolute;
   top: 0px;
   width: 100%;
-  height: 1104px;
+  height: 1097px;
   object-fit: cover;
   object-position: center;
   opacity: 20%;
@@ -776,7 +775,7 @@ h1 {
 @-moz-document url-prefix() {
 
   .free-transport-img {
-    height: 1133px;
+    height: 1126px;
   }
 
 }

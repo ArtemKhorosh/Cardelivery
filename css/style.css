@@ -758,22 +758,44 @@ h1 {
   margin-top: 47px;
 }
 
-/*-----------------------------------------------------------------------------*/
-.card-block {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  /* gap: 30px; */
+.free-transport {
+  position: relative;
 }
 
-.card-route-wrapper {}
+.free-transport-img {
+  position: absolute;
+  top: 19px;
+  width: 100%;
+  height: 1262px;
+  object-fit: cover;
+  object-position: center;
+  opacity: 20%;
+  z-index: 0;
+}
+
+@media screen and (max-width: 1200px) {
+  .free-transport-img {
+    max-width: 1200px;
+  }
+}
+
+/*-----------------------------------------------------------------------------*/
+.card-block {}
+
+.card-route-wrapper {
+  padding: 20px;
+}
 
 .card-route {
   width: 796px;
   border: 5px solid rgba(203, 203, 203, 0.1);
-  /* box-shadow: 0px 3px 12px 8px rgb(0 0 0 / 25%); */
-  padding: 30px 14px;
+  box-shadow: 0px 3px 12px 8px rgb(0 0 0 / 25%);
   border-radius: 6px;
+  margin-left: 45px;
+}
+
+.card-route:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 @media screen and (max-width: 1992px) {
@@ -785,6 +807,7 @@ h1 {
 .route-info {
   display: flex;
   background-color: #fff;
+  padding: 30px 14px;
 }
 
 .route-map-img {
@@ -797,6 +820,12 @@ h1 {
   flex-direction: column;
   gap: 18px;
   padding-left: 17px;
+}
+
+.route-text svg {
+  width: 28px;
+  height: 19px;
+  padding-top: 5px;
 }
 
 .route-name-red,
@@ -849,6 +878,7 @@ h1 {
 
 .route-text-gray {
   color: #37474F;
+  margin-right: 5px;
 }
 
 .route-button-wrapper {
@@ -904,7 +934,6 @@ h1 {
   align-items: center;
   justify-content: center;
   position: absolute;
-  left: 0;
   background-color: rgba(0, 0, 0, 0.5);
   border: none;
   padding: 10px;
@@ -919,17 +948,11 @@ h1 {
 }
 
 .control .prev {
-  position: absolute;
-  transform: rotate(90deg);
-  top: 40%;
-  left: 97%;
+  right: 70%;
 }
 
 .control .next {
-  position: absolute;
-  transform: rotate(90deg);
-  top: 60%;
-  left: 97%;
+  left: 70%;
 }
 
 .control svg {
@@ -939,10 +962,8 @@ h1 {
 }
 
 .slider-dots {
-  position: absolute;
-  top: 49%;
-  left: 99%;
-  transform: rotate(0deg);
+  text-align: center;
+  margin-top: 14px;
 }
 
 .slider-dots button {

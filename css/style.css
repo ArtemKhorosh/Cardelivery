@@ -519,7 +519,7 @@ h1 {
 }
 
 .free-transport .title-big {
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
 .free-transport .block {
@@ -762,15 +762,23 @@ h1 {
   position: relative;
 }
 
-.free-transport-img img{
+.free-transport-img {
   position: absolute;
-  top: 19px;
+  top: 0px;
   width: 100%;
-  height: 1262px;
+  height: 1104px;
   object-fit: cover;
   object-position: center;
   opacity: 20%;
   z-index: 0;
+}
+
+@-moz-document url-prefix() {
+
+  .free-transport-img {
+    height: 1133px;
+  }
+
 }
 
 @media screen and (max-width: 1200px) {
@@ -807,7 +815,7 @@ h1 {
 .route-info {
   display: flex;
   background-color: #fff;
-  padding: 30px 14px;
+  padding: 15px 10px;
 }
 
 .route-map-img {
@@ -818,7 +826,7 @@ h1 {
 .route-text-wrapper {
   display: flex;
   flex-direction: column;
-  gap: 18px;
+  /* gap: 18px; */
   padding-left: 17px;
 }
 
@@ -856,6 +864,7 @@ h1 {
   display: flex;
   flex-direction: column;
   gap: 12px;
+  margin-bottom: 12px;
 }
 
 .route-text,
@@ -864,17 +873,17 @@ h1 {
 .route-text-gray-mini {
   font-family: "CoreSansA35Light", sans-serif;
   font-style: normal;
-  font-size: 16px;
+  font-size: 12px;
   font-weight: 400;
   line-height: 18px;
   color: #000000;
 }
 
-@media screen and (max-width: 1992px) {
+/* @media screen and (max-width: 1992px) {
   .about-container p {
     font-size: 12px;
   }
-}
+} */
 
 .route-text-gray {
   color: #37474F;
@@ -913,7 +922,7 @@ h1 {
   font-family: "CoreSansA45Regular";
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px !important;
   line-height: 16px;
   text-align: center;
   color: #37474F;
